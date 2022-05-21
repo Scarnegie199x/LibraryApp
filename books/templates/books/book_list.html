@@ -1,4 +1,10 @@
-<h1>All Books</h1>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+<h1>Welcome to the Kings Royal Library!</h1>
 {% for book in book_list %}
 <ul>
   <li>Title: {{ book.title }}</li>
