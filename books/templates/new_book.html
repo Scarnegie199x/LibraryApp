@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1 class="addbook-header">Enter a record into the grand archive.</h1>
+<div class="wrapper">
+  <div class="formbox">
+    <form action="" method="post">{% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class = "class="btn btn-success">Add Book</button>
+    </form>
+  </div>
+</div>
+{% endblock content %}

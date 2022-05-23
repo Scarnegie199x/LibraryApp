@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+  <head>
+    <title>King's Library</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %} ">
+  </head>
+  <body>
+    <header>
+      <div class = "navigation">
+        Welcome to the Grand Archive
+        <a class = "links" href="{% url 'apis' %}">API Endpoint</a>|
+        <a class = "links" href="{% url 'add_book' %}">Add a book</a>
+      </div>
+
+    </header>
+
+    {% block content %}
+    {% endblock content %}
+  </body>
+
+</html>
